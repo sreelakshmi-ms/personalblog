@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background:white;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    width: 240px;
+    padding: 20px;
+    border-radius: 100px;
+  }
+  p{
+    float:left;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color:rgba(205, 92, 92, 0.503);
+    padding: 30px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .fakeimg img{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border-radius: 350px;
+  }
+  /* .navbar{
+    background-color:hotpink;
+  }
+   */
+   .skill img{
+    height:200px ;
+    padding: 40px;
+   }
+   .works img{
+    width: 100%;
+   }
+   .card input,textarea{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+   }
+   input[type=submit] {
+    width: 20%;
+    background-color:indianred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color:rgba(205, 92, 92, 0.57);
+  }
+  .card h1{
+    color:indianred;
+  }
+  .header h1{
+    font-size: 80px;
+    color: indianred;
+  }
+.header h3{
+    color: rgba(205, 92, 92, 0.701);
+}
